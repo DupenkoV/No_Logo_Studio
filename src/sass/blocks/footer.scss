@@ -1,0 +1,55 @@
+footer {
+  height: 901px;
+  background: url('./../img/map.png') center no-repeat;
+  position: relative;
+  &::after {
+    content: url('./../icons/map_marker.png');
+    display: block;
+    position: absolute;
+    top: 346px;
+    right: 931px;
+  }
+}
+
+.footer {
+  width: 1024px;
+  height: 147px;
+  background-color: #fff;
+  position: absolute;
+  top: 754px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  padding: 31px 0 28px 32px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 9px;
+  &__info {
+    display: flex;
+  }
+  &__title {
+    width: 75px;
+    font-size: 13px;
+    color: #3a3c40;
+    display: flex;
+    align-items: start;
+  }
+  &__descr {
+    font-size: 13px;
+    font-weight: 300;
+    color: #747780;
+    a {
+      text-decoration: none;
+      color: #747780;
+    }
+    &_email {
+      a {
+        color: #cb003d;
+      }
+    }
+  }
+}
+
+.webStore {
+  margin-top: 10px;
+}
